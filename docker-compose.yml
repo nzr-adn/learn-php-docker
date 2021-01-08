@@ -1,7 +1,8 @@
 app:
   build: app
-  restart: always
+  image: nzr131189/learn-docker-php
   ports:
     - "30001:80"
   volumes:
-    - app-src/:/var/www/html/
+    - ./app/app-src/:/var/www/html/
+  container_name: docker_php
