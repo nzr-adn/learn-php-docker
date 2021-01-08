@@ -1,8 +1,9 @@
-app:
-  build: app
-  image: nzr131189/learn-docker-php
-  ports:
-    - "30001:80"
-  volumes:
-    - ./app/app-src/:/var/www/html/
-  container_name: docker_php
+services:
+  app:
+    build: app
+    image: nzr131189/learn-docker-php
+    ports:
+      - "30001:80"
+    volumes:
+      - ./app/app-src/:/var/www/html/
+    container_name: docker_php
